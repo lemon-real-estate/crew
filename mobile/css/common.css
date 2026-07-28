@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic UI","Yu Gothic",sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+.loading{
+    text-align:center;
+    color:#666;
+    font-size:18px;
+}
+.footerNav{
+
+    padding:24px 18px 40px;
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSV変換</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/csv.css">
+</head>
+
+<body>
+
+    <a href="../index.html">
+        ← ポータルへ戻る
+    </a>
+
+    <h1>📄 CSV変換</h1>
+
+    <p>変動費報告書を作成します。</p>
+
+    <input type="file" id="csvFile" accept=".csv">
+
+    <br><br>
+
+    <button id="convertButton">
+        変換開始
+    </button>
+
+    <hr>
+
+    <div id="status">
+        CSVを選択してください。
+    </div>
+
+    <script src="../js/xlsx.full.min.js"></script>
+    <script src="../js/csv.js"></script>
+
+</body>
+
+</html>

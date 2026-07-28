@@ -1,0 +1,122 @@
+/* ========= トップページ ========= */
+
+.header{
+
+    background:#3367c2;
+    color:#fff;
+    text-align:center;
+    padding:34px 20px;
+
+}
+
+.header h1{
+
+    font-size:38px;
+    margin-bottom:10px;
+
+}
+
+.header p{
+
+    opacity:.9;
+    font-size:17px;
+
+}
+
+.container{
+
+    max-width:700px;
+    margin:24px auto;
+    padding:0 16px;
+
+}
+
+.menu{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    background:#fff;
+
+    text-decoration:none;
+    color:#333;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:18px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    transition:.2s;
+
+}
+
+.menu:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.icon{
+
+    font-size:42px;
+    width:60px;
+    text-align:center;
+
+}
+
+.menu h2{
+
+    font-size:28px;
+    margin-bottom:6px;
+
+}
+
+.menu p{
+
+    color:#777;
+
+}
+
+.disabled{
+
+    opacity:.45;
+    pointer-events:none;
+
+}
+.footerNav{
+
+    padding:24px 18px 40px;
+
+}
+.logoutArea{
+
+    margin-top:40px;
+    text-align:center;
+
+}
+
+#logoutButton{
+
+    width:220px;
+    height:46px;
+
+    background:#888;
+
+    color:#fff;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+#logoutButton:hover{
+
+    background:#666;
+
+}

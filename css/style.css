@@ -1,0 +1,372 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Yu Gothic UI","Yu Gothic",sans-serif;
+    background:#f4f6f8;
+    color:#333;
+
+}
+.page{
+
+    max-width:1400px;
+
+    margin:22px auto;
+
+    padding:0 32px;
+
+}
+
+/* =========================
+   Header
+========================= */
+
+.topHeader{
+
+    background:#fff;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 22px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.06);
+
+}
+
+.crewLogo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#1f6fd6;
+
+    letter-spacing:2px;
+
+    position:relative;
+
+    padding-left:22px;
+
+}
+
+.crewLogo::before{
+
+    content:"";
+
+    width:11px;
+    height:11px;
+
+    background:#FFD84D;
+
+    border-radius:3px;
+
+    position:absolute;
+
+    left:0;
+    top:11px;
+
+}
+
+.crewSub{
+
+    font-size:11px;
+
+    color:#888;
+
+    margin-top:3px;
+
+}
+
+.titleArea{
+
+    flex:1;
+
+    padding:0 28px;
+
+}
+
+.titleArea h1{
+
+    font-size:28px;
+
+    margin-bottom:4px;
+
+}
+
+.titleArea p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.version{
+
+    background:#f3f3f3;
+
+    border-radius:18px;
+
+    padding:8px 14px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+    color:#666;
+
+}
+
+/* =========================
+   Section
+========================= */
+
+.menuSection{
+
+    margin-bottom:22px;
+
+    padding-left:10px;
+
+}
+
+.salesTitle,
+.manageTitle{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    padding-bottom:6px;
+
+    border-bottom:3px solid;
+
+    margin-left:8px;
+}
+
+.salesTitle{
+
+    color:#1976d2;
+
+    border-color:#1976d2;
+
+}
+
+.manageTitle{
+
+    color:#2e7d32;
+
+    border-color:#43a047;
+
+}
+
+/* =========================
+   Cards
+========================= */
+
+.cardGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:10px;
+
+}
+
+.cardGrid button{
+
+    border:none;
+
+    border-radius:14px;
+
+    height:95px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    transition:.18s;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+
+}
+
+.cardGrid button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 6px 14px rgba(0,0,0,.08);
+
+}
+
+.salesCard{
+
+    background:#EAF5FF;
+
+    border:1px solid #C9DDFC;
+
+}
+
+.manageCard{
+
+    background:#EEF9EF;
+
+    border:1px solid #CDE6CF;
+
+}
+
+button:disabled{
+
+    opacity:.55;
+
+    cursor:default;
+
+}
+
+button:disabled:hover{
+
+    transform:none;
+
+}
+
+.icon{
+
+    font-size:26px;
+
+    margin-bottom:6px;
+
+}
+
+.cardTitle{
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    margin-bottom:2px;
+
+}
+
+.cardSub{
+
+    font-size:12px;
+
+    color:#666;
+
+}
+
+/* =========================
+   Link
+========================= */
+
+.linkSection{
+
+    background:#fff;
+
+    border-radius:14px;
+
+    padding:16px;
+
+    margin-top:24px;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.05);
+
+}
+
+.linkSection h2{
+
+    margin-bottom:12px;
+
+}
+
+.linkGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:8px;
+
+}
+
+.linkGrid a{
+
+    text-decoration:none;
+
+    color:#444;
+
+    padding:8px 10px;
+
+    border-radius:8px;
+
+    transition:.15s;
+
+}
+
+.linkGrid a:hover{
+
+    background:#eef5ff;
+
+    color:#1976d2;
+
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:900px){
+
+.topHeader{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.titleArea{
+
+    padding:0;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.cardGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.linkGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.titleArea h1{
+
+    font-size:24px;
+
+}
+
+}

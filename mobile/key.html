@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>現地アシスタント - 鍵情報</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/key.css">
+</head>
+
+<body>
+
+    <header class="pageHeader">
+
+        <a href="index.html" class="backButton">
+            ← ホームへ戻る
+        </a>
+
+        <h1>🔑 鍵情報</h1>
+
+        <div class="updateArea">
+
+            <span class="updateLabel">
+                最終更新
+            </span>
+
+            <span id="updateDate">
+                読み込み中...
+            </span>
+
+        </div>
+
+    </header>
+
+    <main class="pageBody">
+
+        <section class="searchArea">
+
+            <label for="searchBox">
+                物件名・部屋番号
+            </label>
+
+            <input type="text" id="searchBox" placeholder="例）ユニテラス / 201">
+
+            <button id="searchButton">
+                🔍 検索
+            </button>
+
+            <button id="listButton" class="subButton">
+                📋 一覧を見る
+            </button>
+
+        </section>
+
+        <section id="resultArea" class="resultArea">
+
+            <div class="resultCard">
+
+                検索してください。
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/mobile.js"></script>
+
+  <div class="footerNav">
+
+    <a href="index.html" class="backButton">
+        ← ホームへ戻る
+    </a>
+
+</div>
+</body>
+
+</html>

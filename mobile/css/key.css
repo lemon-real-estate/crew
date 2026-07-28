@@ -1,0 +1,261 @@
+.pageHeader{
+
+    background:#ffffff;
+    padding:18px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+
+.backButton{
+
+    text-decoration:none;
+    color:#0078d4;
+    font-size:14px;
+    display:inline-block;
+    margin-bottom:12px;
+
+}
+
+.pageHeader h1{
+
+    font-size:28px;
+    margin-bottom:10px;
+
+}
+
+.updateArea{
+
+    background:#eef5ff;
+    border-radius:10px;
+    padding:10px 14px;
+
+}
+
+.updateLabel{
+
+    font-size:13px;
+    color:#666;
+    display:block;
+
+}
+
+#updateDate{
+
+    font-size:17px;
+    font-weight:bold;
+
+}
+
+.pageBody{
+
+    padding:18px;
+
+}
+
+.searchArea{
+
+    background:#fff;
+    border-radius:14px;
+    padding:18px;
+    margin-bottom:20px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+
+    max-width:550px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.searchArea label{
+
+    display:block;
+    font-weight:bold;
+    margin-bottom:8px;
+
+}
+
+#searchBox{
+
+    width:100%;
+    height:52px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    padding:0 14px;
+    font-size:18px;
+    margin-bottom:14px;
+
+}
+
+button{
+
+    width:100%;
+    height:54px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    margin-bottom:12px;
+    transition:.2s;
+
+}
+
+button:hover{
+
+    opacity:.92;
+
+}
+
+#searchButton{
+
+    background:#0078d4;
+    color:#fff;
+
+}
+
+.subButton{
+
+    background:#43a047;
+    color:#fff;
+
+}
+
+/* ---------- 検索結果 ---------- */
+
+.resultArea{
+
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+
+
+    max-width:700px;
+    margin:0 auto;
+
+}
+
+.resultCard{
+
+    background:#fff;
+    border-radius:12px;
+    padding:14px 16px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+
+}
+
+.resultTitle{
+
+    font-size:19px;
+    font-weight:bold;
+    color:#1565c0;
+
+}
+
+.resultLocation{
+
+    margin-top:6px;
+    color:#333;
+    font-size:15px;
+
+}
+
+.resultNote{
+
+    margin-top:6px;
+    color:#666;
+    font-size:14px;
+
+}
+
+.resultPin{
+
+    margin-top:4px;
+    color:#d84315;
+    font-weight:bold;
+    font-size:14px;
+
+}
+
+.loading{
+
+    text-align:center;
+    color:#666;
+    padding:30px;
+}
+
+@media(max-width:600px){
+
+    .pageHeader h1{
+
+        font-size:24px;
+
+    }
+
+    .resultTitle{
+
+        font-size:18px;
+
+    }
+
+}
+.footerNav{
+
+    padding:24px 18px 40px;
+
+}
+
+/* ------------------------------
+   アコーディオン
+------------------------------ */
+
+.accordionCard{
+
+    background:#fff;
+    border-radius:14px;
+    margin-bottom:12px;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+    overflow:hidden;
+
+}
+
+.accordionHeader{
+
+    padding:16px 18px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    user-select:none;
+
+}
+
+.accordionHeader:hover{
+
+    background:#f7f9fc;
+
+}
+
+.accordionBody{
+
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+    padding:0 18px;
+
+}
+
+.accordionBody.open{
+
+    max-height:220px;
+    padding:0 18px 18px;
+
+}
+
+.accordionBody .resultLocation,
+.accordionBody .resultNote,
+.accordionBody .resultPin{
+
+    margin-top:14px;
+    line-height:1.7;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JBR照合</title>
+
+    <link rel="stylesheet" href="../css/jbr.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="../index.html" class="backButton">
+            ← ポータルへ戻る
+        </a>
+
+        <h1>💰 JBR請求照合</h1>
+
+        <div class="card">
+
+            <label>契約者からの集金結果</label>
+
+            <textarea id="dataA" placeholder="ここへ集金データを貼り付けます"></textarea>
+
+        </div>
+
+        <div class="card">
+
+            <label>業者からの請求結果</label>
+
+            <textarea id="dataB" placeholder="ここへ請求データを貼り付けます"></textarea>
+
+        </div>
+
+        <button id="startButton">
+
+            🔍 照合開始
+
+        </button>
+
+        <div class="result">
+            <hr>
+
+            <h2>解析データ</h2>
+
+            <div id="parsedArea"></div>
+
+            <h2>照合結果</h2>
+
+            <div id="resultArea">
+
+                ボタンを押してください。
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/jbr.js"></script>
+
+</body>
+
+</html>
