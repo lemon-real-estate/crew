@@ -1,0 +1,17 @@
+# VSCode設定
+.vscode/
+
+# OSの一時ファイル
+.DS_Store
+Thumbs.db
+
+# ログ
+*.log
+
+# 一時ファイル
+*.tmp
+*.temp
+
+# Node.jsを使う場合（将来用）
+node_modules/
+npm-debug.log*
