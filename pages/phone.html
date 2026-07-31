@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<title>電話短縮番号帳 | CREW</title>
+
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/phone.css">
+
+</head>
+
+<body>
+
+<div class="pageContainer">
+
+    <a href="../index.html" class="backButton">
+        ← ホームへ戻る
+    </a>
+
+    <div class="pageHeader">
+        <h1>📞 電話短縮番号帳</h1>
+    </div>
+
+
+    <div class="toolbar">
+
+        <div class="searchItem">
+
+            <label>検索</label>
+
+            <input
+                class="input"
+                type="text"
+                id="keyword"
+                placeholder="短縮番号・名称・カナ名称">
+
+        </div>
+
+
+        <div class="searchItem">
+
+            <label>業種</label>
+
+            <select class="select" id="type">
+
+                <option value="">すべて</option>
+                <option>関係業者</option>
+                <option>オーナー</option>
+                <option>不動産業者</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="resultCount">
+
+            検索結果：
+            <span id="count">0</span>件
+
+        </div>
+
+
+    </div>
+
+
+    <div class="tableContainer">
+
+        <table id="phoneTable" class="dataTable">
+
+            <thead>
+
+                <tr>
+                    <th>短縮</th>
+                    <th>名称</th>
+                    <th>電話番号</th>
+                    <th>グループ</th>
+                    <th>業種</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+
+</div>
+
+
+<script src="../js/phone.js"></script>
+
+</body>
+
+</html>

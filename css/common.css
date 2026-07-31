@@ -1,0 +1,241 @@
+/* CREW 共通UI */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #F5F7FA;
+    color: #333;
+    font-family:
+        "Segoe UI",
+        "Meiryo",
+        sans-serif;
+    font-size: 14px;
+}
+
+
+/* ページ全体 */
+
+.pageContainer {
+
+    width: 1100px;
+    max-width: 95vw;
+    margin: 0 auto;
+
+}
+
+
+/* 戻るボタン */
+
+.backButton {
+
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: #355C7D;
+    text-decoration: none;
+
+}
+
+
+/* ページタイトル */
+
+.pageHeader {
+
+    margin-bottom: 20px;
+
+}
+
+
+.pageHeader h1 {
+
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+/* 検索エリア */
+
+.toolbar {
+
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+
+    background: #fff;
+
+    padding: 16px;
+
+    border-radius: 6px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.searchItem {
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+
+.searchItem label {
+
+    font-weight: bold;
+
+}
+
+
+/* 入力 */
+
+.input {
+
+    width: 420px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #D9DEE5;
+    border-radius: 6px;
+
+    font-size: 14px;
+
+}
+
+
+.select {
+
+    width: 180px;
+    height: 40px;
+
+    padding: 0 8px;
+
+    border: 1px solid #D9DEE5;
+    border-radius: 6px;
+
+    background: #fff;
+
+    font-size: 14px;
+
+}
+
+
+/* 件数 */
+
+.resultCount {
+
+    margin-left: auto;
+
+    padding-bottom: 10px;
+
+    white-space: nowrap;
+
+    font-weight: bold;
+
+}
+
+
+/* テーブル */
+
+.tableContainer {
+
+    background: #fff;
+
+    border-radius: 6px;
+
+    overflow: auto;
+
+}
+
+
+.dataTable {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+}
+
+
+.dataTable th {
+
+    position: sticky;
+    top: 0;
+
+    background: #355C7D;
+
+    color: #fff;
+
+    height: 40px;
+
+    text-align: left;
+
+    padding: 0 12px;
+
+}
+
+
+.dataTable td {
+
+    height: 40px;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #E5E8EC;
+
+}
+
+
+.dataTable tbody tr:nth-child(even) {
+
+    background: #F8FAFC;
+
+}
+
+
+.dataTable tbody tr:hover {
+
+    background: #EEF5FB;
+
+}
+.card {
+
+    background:#fff;
+    padding:24px;
+    border-radius:6px;
+
+}
+
+
+.btn {
+
+    height:40px;
+    padding:0 20px;
+
+    border:none;
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+
+.btnPrimary {
+
+    background:#355C7D;
+    color:#fff;
+
+}

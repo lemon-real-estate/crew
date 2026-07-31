@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<title>明細書メール送信 | CREW</title>
+
+<link rel="stylesheet" href="../css/common.css">
+
+</head>
+
+<body>
+
+<div class="pageContainer">
+
+    <div class="pageHeader">
+        <h1>📩 家賃明細書メール送信</h1>
+    </div>
+
+
+    <div class="card">
+
+        <p>
+            担当者確認のためPINを入力してください。
+        </p>
+
+        <input
+            id="pin"
+            class="input"
+            type="password"
+            maxlength="4"
+            placeholder="4桁PIN">
+
+
+        <button
+            class="btn btnPrimary"
+            onclick="checkPin()">
+            確認
+        </button>
+
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+
+<script src="../js/mail.js"></script>
+
+</body>
+
+</html>
