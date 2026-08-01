@@ -1,0 +1,15 @@
+{
+  "name": "現地キーボックス",
+  "short_name": "鍵情報",
+  "start_url": "./login.html",
+  "display": "standalone",
+  "background_color": "#87D8FF",
+  "theme_color": "#87D8FF",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
