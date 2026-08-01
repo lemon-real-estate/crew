@@ -4,8 +4,9 @@ const passwordBox = document.getElementById("password");
 const loginButton = document.getElementById("loginButton");
 const errorMessage = document.getElementById("errorMessage");
 
-// 60分
-const LOGIN_TIME = 60 * 60 * 1000;
+// 60分　60 (分)* 60(秒) * 1000(ミリ秒)
+
+const LOGIN_TIME = 5 * 60 * 1000;
 
 // 起動時
 window.addEventListener("load", () => {
