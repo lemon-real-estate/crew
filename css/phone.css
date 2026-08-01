@@ -27,8 +27,16 @@
 
 }
 
+/* 電話番号列 */
+#phoneTable th:nth-child(3) {
 
-#phoneTable th:nth-child(3),
+    width: 180px;
+    white-space: nowrap;
+
+    color: #fff;
+
+}
+
 #phoneTable td:nth-child(3) {
 
     width: 180px;
