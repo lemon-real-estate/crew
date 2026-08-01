@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family:"Yu Gothic UI","Yu Gothic",sans-serif;
+    font-family:"Noto Sans JP",
+        "Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;
     background:#f4f6f8;
     color:#333;
 }
