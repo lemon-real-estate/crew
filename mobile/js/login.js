@@ -44,7 +44,7 @@ function checkLogin() {
 
     if (now - Number(loginTime) < LOGIN_TIME) {
 
-        location.href = "index.html";
+        location.href = "key.html";
 
     } else {
 
