@@ -183,3 +183,6 @@ function filterTable() {
     drawTable(result);
 
 }
+window.addEventListener("load", () => {
+    document.getElementById("keyword").focus();
+});
