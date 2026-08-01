@@ -85,7 +85,7 @@ async function login() {
                 Date.now()
             );
 
-            location.href = "index.html";
+            location.href = "key.html";
 
         } else {
 
