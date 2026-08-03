@@ -259,3 +259,17 @@ button:hover{
     line-height:1.7;
 
 }
+
+#status{
+
+    display:none;
+
+    text-align:center;
+
+    padding:18px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
