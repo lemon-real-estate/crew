@@ -1,377 +1,547 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+/* =========================================
+   CREW TOP PAGE
+========================================= */
+
+* {
+    box-sizing: border-box;
 }
 
-body{
 
-    font-family:"Yu Gothic UI","Yu Gothic",sans-serif;
-    background:#f4f6f8;
-    color:#333;
+/* =========================================
+   全体
+========================================= */
 
-}
-.page{
+body {
+    margin: 0;
+    padding: 20px;
 
-    max-width:1400px;
+    background: #F5F7FA;
+    color: #333;
 
-    margin:22px auto;
+    font-family:
+        "Segoe UI",
+        "Meiryo",
+        sans-serif;
 
-    padding:0 32px;
-
-}
-
-/* =========================
-   Header
-========================= */
-
-.topHeader{
-
-    background:#fff;
-
-    border-radius:14px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:16px 22px;
-
-    margin-bottom:20px;
-
-    box-shadow:0 3px 12px rgba(0,0,0,.06);
-
+    font-size: 14px;
 }
 
-.crewLogo{
 
-    font-size:30px;
+/* =========================================
+   ページ
+========================================= */
 
-    font-weight:bold;
+.page {
+    width: 1100px;
+    max-width: 95vw;
 
-    color:#1f6fd6;
+    margin: 0 auto;
+}
 
-    letter-spacing:2px;
 
-    position:relative;
+/* =========================================
+   ヘッダー
+========================================= */
 
-    padding-left:22px;
+.topHeader {
+    display: flex;
+    align-items: center;
+
+    min-height: 92px;
+
+    background: #fff;
+
+    padding: 18px 22px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 24px;
+}
+
+
+/* CREW */
+
+.crewArea {
+    width: 205px;
+
+    flex-shrink: 0;
+}
+
+
+.crewLogo {
+    color: #2468C7;
+
+    font-size: 30px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+.crewSub {
+    margin-top: 4px;
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* タイトル */
+
+.titleArea {
+    flex: 1;
+
+    padding-left: 12px;
+}
+
+
+.titleArea h1 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+.titleArea p {
+    margin: 6px 0 0;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* バージョン */
+
+.version {
+    flex-shrink: 0;
+
+    padding: 9px 14px;
+
+    background: #F5F5F5;
+
+    border-radius: 20px;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   メインレイアウト
+========================================= */
+
+.mainLayout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(270px, 1fr);
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+
+/* 左側 */
+
+.mainColumn {
+    min-width: 0;
+}
+
+
+/* =========================================
+   メニューセクション
+========================================= */
+
+.menuSection {
+    margin-bottom: 26px;
+}
+
+
+.menuSection h2,
+.quickLinks h2 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+/* 管理タイトル */
+
+.manageTitle {
+    color: #20883E;
+
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    border-bottom: 3px solid #20883E;
+}
+
+
+/* 営業タイトル */
+
+.salesTitle {
+    color: #2468C7;
+
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    border-bottom: 3px solid #2468C7;
+}
+
+
+/* =========================================
+   カードグリッド
+========================================= */
+
+.cardGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   管理カード
+========================================= */
+
+.manageCard,
+.salesCard {
+    width: 100%;
+
+    min-height: 96px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 14px 16px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+/* 管理 */
+
+.manageCard {
+    background: #EDF9F0;
+}
+
+
+/* 営業 */
+
+.salesCard {
+    background: #EAF4FF;
+}
+
+
+/* ホバー */
+
+.manageCard:not(:disabled):hover,
+.salesCard:not(:disabled):hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+/* 無効 */
+
+.manageCard:disabled,
+.salesCard:disabled {
+    opacity: 0.42;
+
+    cursor: default;
+}
+
+
+/* =========================================
+   カード内部
+========================================= */
+
+.icon {
+    font-size: 22px;
+
+    margin-bottom: 4px;
+}
+
+
+.cardTitle {
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.cardSub {
+    margin-top: 2px;
+
+    color: #777;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   よく使うリンク
+========================================= */
+
+.quickLinks {
+    background: #fff;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06);
+
+    position: sticky;
+
+    top: 20px;
+}
+
+
+.quickLinks h2 {
+    color: #333;
+
+    padding-bottom: 9px;
+
+    border-bottom: 2px solid #E6E6E6;
+}
+
+
+/* =========================================
+   リンク一覧
+========================================= */
+
+.quickLinkList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+/* =========================================
+   個別リンク
+========================================= */
+
+.quickLink {
+    display: flex;
+
+    align-items: center;
+
+    min-height: 42px;
+
+    padding: 7px 9px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #355C7D;
+
+    background: #F8FAFC;
+
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.quickLink:hover {
+    background: #EEF5FB;
+
+    transform: translateX(2px);
+}
+
+
+/* アイコン */
+
+.quickIcon {
+    width: 28px;
+
+    flex-shrink: 0;
+
+    font-size: 17px;
+
+    text-align: center;
+}
+
+
+/* 文字 */
+
+.quickText {
+    font-size: 13px;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   スクロールバー対策
+========================================= */
+
+.quickLinkList {
+    max-height: calc(100vh - 190px);
+
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   タブレット・小さめ画面
+========================================= */
+
+@media (max-width: 850px) {
+
+    .mainLayout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .quickLinks {
+        position: static;
+    }
+
+
+    .quickLinkList {
+        max-height: none;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
 
 }
 
-.crewLogo::before{
 
-    content:"";
+/* =========================================
+   スマートフォン
+========================================= */
 
-    width:11px;
-    height:11px;
+@media (max-width: 600px) {
 
-    background:#FFD84D;
+    body {
+        padding: 10px;
+    }
 
-    border-radius:3px;
 
-    position:absolute;
+    .page {
+        max-width: 100%;
+    }
 
-    left:0;
-    top:11px;
 
-}
+    .topHeader {
+        flex-wrap: wrap;
 
-.crewSub{
+        gap: 10px;
 
-    font-size:11px;
+        padding: 16px;
+    }
 
-    color:#888;
 
-    margin-top:3px;
+    .crewArea {
+        width: auto;
+    }
 
-}
 
-.titleArea{
+    .titleArea {
+        width: 100%;
 
-    flex:1;
+        order: 3;
 
-    padding:0 28px;
+        padding-left: 0;
+    }
 
-}
 
-.titleArea h1{
+    .titleArea h1 {
+        font-size: 19px;
+    }
 
-    font-size:28px;
 
-    margin-bottom:4px;
+    .version {
+        margin-left: auto;
+    }
 
-}
 
-.titleArea p{
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
 
-    color:#666;
 
-    font-size:14px;
-
-}
-
-.version{
-
-    background:#f3f3f3;
-
-    border-radius:18px;
-
-    padding:8px 14px;
-
-    font-size:13px;
-
-    font-weight:bold;
-
-    color:#666;
+    .quickLinkList {
+        grid-template-columns: 1fr;
+    }
 
 }
+/* =========================================
+   TOPページ 左右2カラム 強制設定
+========================================= */
 
-/* =========================
-   Section
-========================= */
-
-.menuSection{
-
-    margin-bottom:22px;
-
-    padding-left:10px;
-
+.mainLayout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 2fr) minmax(270px, 1fr) !important;
+    gap: 20px !important;
+    align-items: start !important;
 }
 
-.salesTitle,
-.manageTitle{
-
-    display:inline-block;
-
-    margin-bottom:12px;
-
-    padding-bottom:6px;
-
-    border-bottom:3px solid;
-
-    margin-left:8px;
+.mainColumn {
+    min-width: 0;
 }
 
-.salesTitle{
-
-    color:#1976d2;
-
-    border-color:#1976d2;
-
+.quickLinks {
+    display: block !important;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-.manageTitle{
-
-    color:#2e7d32;
-
-    border-color:#43a047;
-
+.quickLinkList {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px;
 }
 
-/* =========================
-   Cards
-========================= */
-
-.cardGrid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-    gap:10px;
-
-}
-
-.cardGrid button{
-
-    border:none;
-
-    border-radius:14px;
-
-    height:95px;
-
-    padding:12px;
-
-    cursor:pointer;
-
-    text-align:left;
-
-    transition:.18s;
-
-    box-shadow:0 2px 6px rgba(0,0,0,.06);
-
-}
-
-.cardGrid button:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:0 6px 14px rgba(0,0,0,.08);
-
-}
-
-.salesCard{
-
-    background:#EAF5FF;
-
-    border:1px solid #C9DDFC;
-
-}
-
-.manageCard{
-
-    background:#EEF9EF;
-
-    border:1px solid #CDE6CF;
-
-}
-
-button:disabled{
-
-    opacity:.55;
-
-    cursor:default;
-
-}
-
-button:disabled:hover{
-
-    transform:none;
-
-}
-
-.icon{
-
-    font-size:26px;
-
-    margin-bottom:6px;
-
-}
-
-.cardTitle{
-
-    font-size:15px;
-
-    font-weight:bold;
-
-    margin-bottom:2px;
-
-}
-
-.cardSub{
-
-    font-size:12px;
-
-    color:#666;
-
-}
-
-/* =========================
-   Link
-========================= */
-
-.linkSection{
-
-    background:#fff;
-
-    border-radius:14px;
-
-    padding:16px;
-
-    margin-top:24px;
-
-    box-shadow:0 2px 6px rgba(0,0,0,.05);
-
-}
-
-.linkSection h2{
-
-    margin-bottom:12px;
-
-}
-
-.linkGrid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-
-    gap:8px;
-
-}
-
-.linkGrid a{
-
-    text-decoration:none;
-
-    color:#444;
-
-    padding:8px 10px;
-
-    border-radius:8px;
-
-    transition:.15s;
-
-}
-
-.linkGrid a:hover{
-
-    background:#eef5ff;
-
-    color:#1976d2;
-
-}
-
-/* =========================
-   Responsive
-========================= */
-
-@media(max-width:900px){
-
-.topHeader{
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:12px;
-
-}
-
-.titleArea{
-
-    padding:0;
-
-}
-
-}
-
-@media(max-width:700px){
-
-.cardGrid{
-
-    grid-template-columns:1fr;
-
-}
-
-.linkGrid{
-
-    grid-template-columns:1fr;
-
-}
-
-.titleArea h1{
-
-    font-size:24px;
-
-}
-
-}
-.spaceTop{
-
-    margin-top:50px;
-
+.quickLink {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
 }

@@ -1,3 +1,8 @@
+
+body {
+    background: red !important;
+}
+
 /* =========================================
    CREW TOP PAGE
 ========================================= */
@@ -507,4 +512,40 @@ body {
         grid-template-columns: 1fr;
     }
 
+}
+/* =========================================
+   TOPページ 左右2カラム 強制設定
+========================================= */
+
+.mainLayout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 2fr) minmax(270px, 1fr) !important;
+    gap: 20px !important;
+    align-items: start !important;
+}
+
+.mainColumn {
+    min-width: 0;
+}
+
+.quickLinks {
+    display: block !important;
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.quickLinkList {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px;
+}
+
+.quickLink {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    min-height: 42px;
 }
