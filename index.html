@@ -1,259 +1,265 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="ja">
 
-<title>賃貸管理 家賃・資金移動管理関係ツール</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/style.css">
+    <title>賃貸管理 家賃・資金移動管理関係ツール</title>
 
-<link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
 
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
 
-<div class="page">
+<body>
 
-    <header class="topHeader">
+    <div class="page">
 
-        <div class="crewArea">
+        <header class="topHeader">
 
-            <div class="crewLogo">
-                CREW
+            <div class="crewArea">
+
+                <div class="crewLogo">
+                    CREW
+                </div>
+
+                <div class="crewSub">
+                    CreateLemon Real Estate Workbench
+                </div>
+
             </div>
 
-            <div class="crewSub">
-                CreateLemon Real Estate Workbench
+            <div class="titleArea">
+
+                <h1>🏢 家賃・資金移動管理関係その他便利ツール</h1>
+
+                <p>
+                    　賃貸管理
+                </p>
+
             </div>
 
-        </div>
+            <div class="version">
+                Ver 3.0.0
+            </div>
 
-        <div class="titleArea">
+        </header>
 
-            <h1>🏢 家賃・資金移動管理関係その他便利ツール</h1>
 
-            <p>
-                　賃貸管理
-            </p>
+        <!-- よく使うリンク -->
 
-        </div>
+        <section class="linkSection">
 
-        <div class="version">
-            Ver 3.0.0
-        </div>
+            <h2>
+                ⭐ よく使うリンク
+            </h2>
 
-    </header>
+            <div class="linkGrid">
 
+                <a href="pages/phone.html" target="_blank" rel="noopener noreferrer">
+                    📞 電話短縮表
+                </a>
 
-    <!-- よく使うリンク -->
+                <a href="https://docs.google.com/spreadsheets/d/1bgA8TogPYmhcexfEjz4lGlwlfKmsbsn7ODVu66kj0d8/edit?gid=0#gid=0"
+                    target="_blank" rel="noopener noreferrer">
+                    🚙 PD通知メール管理表
+                </a>
 
-    <section class="linkSection">
+                <a href="https://docs.google.com/spreadsheets/d/1tjlZhXu7D7Mv6nznEPArrIwgDgrNtqrn7RrDyhCazM8/edit?gid=95663191#gid=95663191"
+                    target="_blank" rel="noopener noreferrer">
+                    🔑 現地鍵情報
+                </a>
 
-        <h2>
-            ⭐ よく使うリンク
-        </h2>
+                <a href="https://mgt.park-direct.jp/manage/home"
+                    target="_blank" rel="noopener noreferrer">
+                    🌐 ParkDirect管理画面
+                </a>
 
-        <div class="linkGrid">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWWvL0flLw8ctxqHkCEs2JuUSwmkIJVOV382jugYk5uuykXQ/viewform"
+                    target="_blank" rel="noopener noreferrer">
+                    📂 切手･レタパ申請
+                </a>
 
-            <a href="pages/phone.html" target="_blank" rel="noopener noreferrer">
-                📞 電話短縮表
-            </a>
+            </div>
 
+        </section>
 
-            <a href="https://docs.google.com/spreadsheets/d/1bgA8TogPYmhcexfEjz4lGlwlfKmsbsn7ODVu66kj0d8/edit?gid=0#gid=0"
-                target="_blank" rel="noopener noreferrer">
-                🚙 PD通知メール管理表
-            </a>
 
+        <section class="menuSection spaceTop"></section>
 
-            <a href="https://docs.google.com/spreadsheets/d/1tjlZhXu7D7Mv6nznEPArrIwgDgrNtqrn7RrDyhCazM8/edit?gid=95663191#gid=95663191"
-                target="_blank" rel="noopener noreferrer">
-                🔑 現地鍵情報
-            </a>
 
+        <!-- 管理 -->
 
-            <a href="https://mgt.park-direct.jp/manage/home" target="_blank" rel="noopener noreferrer">
-                🌐 ParkDirect管理画面
-            </a>
+        <section class="menuSection">
 
+            <h2 class="manageTitle">
+                🛠 管理メニュー
+            </h2>
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWWvL0flLw8ctxqHkCEs2JuUSwmkIJVOV382jugYk5uuykXQ/viewform"
-                target="_blank" rel="noopener noreferrer">
-                📂 切手･レタパ申請
-            </a>
+            <div class="cardGrid">
 
-        </div>
+                <!-- JBR -->
 
-    </section>
+                <button class="manageCard"
+                    onclick="window.open('pages/jbr.html', '_blank')">
 
+                    <div class="icon">💰</div>
 
-    <section class="menuSection spaceTop"></section>
+                    <div class="cardTitle">
+                        JBR請求･集金照合
+                    </div>
 
+                    <div class="cardSub">
+                        請求データ照合
+                    </div>
 
-    <!-- 管理 -->
+                </button>
 
-    <section class="menuSection">
 
-        <h2 class="manageTitle">
-            🛠 管理メニュー
-        </h2>
+                <!-- 変動費送金内訳書 -->
 
+                <button class="manageCard"
+                    onclick="window.open('https://docs.google.com/spreadsheets/d/1nT0sJVM4NHtCjEt48O3t_vbWLfxGXHNhxkuN5CVSnjE/edit?gid=215738077#gid=215738077', '_blank')">
 
-        <div class="cardGrid">
+                    <div class="icon">📄</div>
 
+                    <div class="cardTitle">
+                        変動費送金内訳書
+                    </div>
 
-            <!-- JBR -->
+                    <div class="cardSub">
+                        トラッドセブン送金内訳
+                    </div>
 
-            <button class="manageCard" onclick="window.open('pages/jbr.html', '_blank')">
+                </button>
 
-                <div class="icon">💰</div>
 
-                <div class="cardTitle">
-                    JBR請求･集金照合
-                </div>
+                <!-- 解約カレンダー -->
 
-                <div class="cardSub">
-                    請求データ照合
-                </div>
+                <button class="manageCard"
+                    onclick="window.open('https://docs.google.com/spreadsheets/d/1y6k8yBIT2CAyS-FDNW5KqVPugXufCrGcAx67yOpygtk/edit?gid=0#gid=0', '_blank')">
 
-            </button>
-            <!-- 変動費送金内訳書 -->
+                    <div class="icon">📅</div>
 
-            <button class="manageCard"
-                onclick="window.open('https://docs.google.com/spreadsheets/d/1nT0sJVM4NHtCjEt48O3t_vbWLfxGXHNhxkuN5CVSnjE/edit?gid=215738077#gid=215738077', '_blank')">
+                    <div class="cardTitle">
+                        解約カレンダー
+                    </div>
 
-                <div class="icon">📄</div>
+                    <div class="cardSub">
+                        退去カレンダー転記
+                    </div>
 
-                <div class="cardTitle">
-                    変動費送金内訳書
-                </div>
+                </button>
 
-                <div class="cardSub">
-                    トラッドセブン送金内訳
-                </div>
 
-            </button>
+                <!-- 家賃明細書メール -->
 
+                <button class="manageCard"
+                    onclick="window.open('pages/mail.html', '_blank')">
 
-            <!-- 解約カレンダー -->
+                    <div class="icon">📩</div>
 
-            <button class="manageCard"
-                onclick="window.open('https://docs.google.com/spreadsheets/d/1y6k8yBIT2CAyS-FDNW5KqVPugXufCrGcAx67yOpygtk/edit?gid=0#gid=0', '_blank')">
+                    <div class="cardTitle">
+                        家賃明細書メール送信
+                    </div>
 
-                <div class="icon">📅</div>
+                    <div class="cardSub">
+                        海外在住オーナー宛
+                    </div>
 
-                <div class="cardTitle">
-                    解約カレンダー
-                </div>
+                </button>
 
-                <div class="cardSub">
-                    退去カレンダー転記
-                </div>
+            </div>
 
-            </button>
+        </section>
 
 
-            <!-- 家賃明細書メール -->
+        <!-- 営業 -->
 
-            <button class="manageCard" onclick="window.open('pages/mail.html', '_blank')">
+        <section class="menuSection">
 
-                <div class="icon">📩</div>
+            <h2 class="salesTitle">
+                👥 営業さん補助
+            </h2>
 
-                <div class="cardTitle">
-                    家賃明細書メール送信
-                </div>
+            <div class="cardGrid">
 
-                <div class="cardSub">
-                    海外在住オーナー宛
-                </div>
+                <!-- 学生物件募集管理 -->
 
-            </button>
+                <button class="salesCard"
+                    onclick="window.open('https://docs.google.com/spreadsheets/d/1gTPpvGXfeoQLnuzbB7sQicKR3WNNJ4iKWX9br2tzk3E/edit?gid=1152130703#gid=1152130703', '_blank')">
 
+                    <div class="icon">🏠</div>
 
-        </div>
+                    <div class="cardTitle">
+                        学生物件募集管理
+                    </div>
 
-    </section>
+                    <div class="cardSub">
+                        学生向け物件募集管理
+                    </div>
 
+                </button>
 
-    <!-- 営業 -->
 
-    <section class="menuSection">
+                <!-- 写真管理 -->
 
-        <h2 class="salesTitle">
-            👥 営業さん補助
-        </h2>
+                <button class="salesCard" disabled>
 
+                    <div class="icon">📷</div>
 
-        <div class="cardGrid">
+                    <div class="cardTitle">
+                        写真管理
+                    </div>
 
+                    <div class="cardSub">
+                        Coming Soon
+                    </div>
 
-            <!-- 現地鍵情報 -->
+                </button>
 
-            <button class="salesCard" onclick="window.open('mobile/key.html', '_blank')">
 
-                <div class="icon">📱</div>
+                <!-- 地図 -->
 
-                <div class="cardTitle">
-                    スマホ対応・現地鍵情報
-                </div>
+                <button class="salesCard" disabled>
 
-                <div class="cardSub">
-                    スマホ=ロック機能付
-                </div>
+                    <div class="icon">📍</div>
 
-            </button>
+                    <div class="cardTitle">
+                        地図
+                    </div>
 
+                    <div class="cardSub">
+                        Coming Soon
+                    </div>
 
-            <!-- 募集管理 -->
+                </button>
 
-            <button class="salesCard" disabled>
 
-                <div class="icon">🏠</div>
+                <!-- 予備 -->
 
-                <div class="cardTitle">
-                    募集管理
-                </div>
+                <button class="salesCard" disabled>
 
-                <div class="cardSub">
-                    Coming Soon
-                </div>
+                    <div class="icon">➕</div>
 
-            </button>
+                    <div class="cardTitle">
+                        Coming Soon
+                    </div>
 
+                    <div class="cardSub">
+                        Coming Soon
+                    </div>
 
-            <!-- 写真管理 -->
+                </button>
 
-            <button class="salesCard" disabled>
+            </div>
 
-                <div class="icon">📷</div>
+        </section>
 
-                <div class="cardTitle">
-                    写真管理
-                </div>
 
-                <div class="cardSub">
-                    Coming Soon
-                </div>
+    </div>
 
-            </button>
+</body>
 
-
-            <!-- 地図 -->
-
-            <button class="salesCard" disabled>
-
-                <div class="icon">📍</div>
-
-                <div class="cardTitle">
-                    地図
-                </div>
-
-                <div class="cardSub">
-                    Coming Soon
-                </div>
-
-            </button>
-
-
-        </div>
-
-    </section>
-
-
-</div>
+</html>
