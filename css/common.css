@@ -1,510 +1,211 @@
-/* =========================================
-   CREW TOP PAGE
-========================================= */
+/* CREW 共通UI */
 
 * {
     box-sizing: border-box;
 }
 
-
-/* =========================================
-   全体
-========================================= */
-
 body {
     margin: 0;
     padding: 20px;
-
     background: #F5F7FA;
     color: #333;
-
     font-family:
         "Segoe UI",
         "Meiryo",
         sans-serif;
-
     font-size: 14px;
 }
 
 
-/* =========================================
-   ページ
-========================================= */
+/* ページ全体 */
 
-.page {
+.pageContainer {
+
     width: 1100px;
     max-width: 95vw;
-
     margin: 0 auto;
+
 }
 
 
-/* =========================================
-   ヘッダー
-========================================= */
+/* 戻るボタン */
 
-.topHeader {
-    display: flex;
-    align-items: center;
+.backButton {
 
-    min-height: 92px;
+    display: inline-block;
+    margin-bottom: 16px;
 
-    background: #fff;
+    color: #355C7D;
+    text-decoration: none;
 
-    padding: 18px 22px;
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.06);
-
-    margin-bottom: 24px;
 }
 
 
-/* CREW */
+/* ページタイトル */
 
-.crewArea {
-    width: 205px;
+.pageHeader {
 
-    flex-shrink: 0;
+    margin-bottom: 20px;
+
 }
 
 
-.crewLogo {
-    color: #2468C7;
+.pageHeader h1 {
 
-    font-size: 30px;
-    font-weight: 500;
-
-    letter-spacing: 1px;
-}
-
-
-.crewSub {
-    margin-top: 4px;
-
-    color: #777;
-
-    font-size: 10px;
-}
-
-
-/* タイトル */
-
-.titleArea {
-    flex: 1;
-
-    padding-left: 12px;
-}
-
-
-.titleArea h1 {
     margin: 0;
 
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
 
-    color: #222;
 }
 
 
-.titleArea p {
-    margin: 6px 0 0;
+/* 検索エリア */
 
-    color: #777;
+.toolbar {
 
-    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+
+    background: #fff;
+
+    padding: 16px;
+
+    border-radius: 6px;
+
+    margin-bottom: 12px;
+
 }
 
 
-/* バージョン */
+.searchItem {
 
-.version {
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 
-    padding: 9px 14px;
-
-    background: #F5F5F5;
-
-    border-radius: 20px;
-
-    color: #666;
-
-    font-size: 12px;
 }
 
 
-/* =========================================
-   メインレイアウト
-========================================= */
+.searchItem label {
 
-.mainLayout {
-    display: grid;
+    font-weight: bold;
 
-    grid-template-columns:
-        minmax(0, 2fr)
-        minmax(270px, 1fr);
-
-    gap: 20px;
-
-    align-items: start;
 }
 
 
-/* 左側 */
+/* 入力 */
 
-.mainColumn {
-    min-width: 0;
+.input {
+
+    width: 420px;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border: 1px solid #D9DEE5;
+    border-radius: 6px;
+
+    font-size: 14px;
+
 }
 
 
-/* =========================================
-   メニューセクション
-========================================= */
+.select {
 
-.menuSection {
-    margin-bottom: 26px;
+    width: 180px;
+    height: 40px;
+
+    padding: 0 8px;
+
+    border: 1px solid #D9DEE5;
+    border-radius: 6px;
+
+    background: #fff;
+
+    font-size: 14px;
+
 }
 
 
-.menuSection h2,
-.quickLinks h2 {
-    margin: 0 0 12px;
+/* 件数 */
 
-    font-size: 21px;
-    font-weight: 700;
+.resultCount {
+
+    margin-left: auto;
+
+    padding-bottom: 10px;
+
+    white-space: nowrap;
+
+    font-weight: bold;
+
 }
 
 
-/* 管理タイトル */
+/* テーブル */
 
-.manageTitle {
-    color: #20883E;
+.tableContainer {
 
-    display: inline-block;
+    background: #fff;
 
-    padding-bottom: 5px;
+    border-radius: 6px;
 
-    border-bottom: 3px solid #20883E;
+    overflow: auto;
+
 }
 
 
-/* 営業タイトル */
+.dataTable {
 
-.salesTitle {
-    color: #2468C7;
-
-    display: inline-block;
-
-    padding-bottom: 5px;
-
-    border-bottom: 3px solid #2468C7;
-}
-
-
-/* =========================================
-   カードグリッド
-========================================= */
-
-.cardGrid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-    gap: 10px;
-}
-
-
-/* =========================================
-   管理カード
-========================================= */
-
-.manageCard,
-.salesCard {
     width: 100%;
 
-    min-height: 96px;
+    border-collapse: collapse;
 
-    border: none;
+    font-size: 14px;
 
-    border-radius: 14px;
+}
 
-    padding: 14px 16px;
+
+.dataTable th {
+
+    position: sticky;
+    top: 0;
+
+    background: #355C7D;
+
+    color: #fff;
+
+    height: 40px;
 
     text-align: left;
 
-    cursor: pointer;
+    padding: 0 12px;
 
-    font-family: inherit;
-
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease;
 }
 
 
-/* 管理 */
+.dataTable td {
 
-.manageCard {
-    background: #EDF9F0;
+    height: 40px;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #E5E8EC;
+
 }
 
 
-/* 営業 */
-
-.salesCard {
-    background: #EAF4FF;
-}
-
-
-/* ホバー */
-
-.manageCard:not(:disabled):hover,
-.salesCard:not(:disabled):hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 5px 12px rgba(0, 0, 0, 0.10);
-}
-
-
-/* 無効 */
-
-.manageCard:disabled,
-.salesCard:disabled {
-    opacity: 0.42;
-
-    cursor: default;
-}
-
-
-/* =========================================
-   カード内部
-========================================= */
-
-.icon {
-    font-size: 22px;
-
-    margin-bottom: 4px;
-}
-
-
-.cardTitle {
-    color: #222;
-
-    font-size: 15px;
-    font-weight: 700;
-
-    line-height: 1.4;
-}
-
-
-.cardSub {
-    margin-top: 2px;
-
-    color: #777;
-
-    font-size: 11px;
-
-    line-height: 1.4;
-}
-
-
-/* =========================================
-   よく使うリンク
-========================================= */
-
-.quickLinks {
-    background: #fff;
-
-    border-radius: 14px;
-
-    padding: 18px;
-
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.06);
-
-    position: sticky;
-
-    top: 20px;
-}
-
-
-.quickLinks h2 {
-    color: #333;
-
-    padding-bottom: 9px;
-
-    border-bottom: 2px solid #E6E6E6;
-}
-
-
-/* =========================================
-   リンク一覧
-========================================= */
-
-.quickLinkList {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 6px;
-}
-
-
-/* =========================================
-   個別リンク
-========================================= */
-
-.quickLink {
-    display: flex;
-
-    align-items: center;
-
-    min-height: 42px;
-
-    padding: 7px 9px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-
-    color: #355C7D;
+.dataTable tbody tr:nth-child(even) {
 
     background: #F8FAFC;
 
-    transition:
-        background 0.15s ease,
-        transform 0.15s ease;
 }
 
 
-.quickLink:hover {
+.dataTable tbody tr:hover {
+
     background: #EEF5FB;
-
-    transform: translateX(2px);
-}
-
-
-/* アイコン */
-
-.quickIcon {
-    width: 28px;
-
-    flex-shrink: 0;
-
-    font-size: 17px;
-
-    text-align: center;
-}
-
-
-/* 文字 */
-
-.quickText {
-    font-size: 13px;
-
-    line-height: 1.3;
-}
-
-
-/* =========================================
-   スクロールバー対策
-========================================= */
-
-.quickLinkList {
-    max-height: calc(100vh - 190px);
-
-    overflow-y: auto;
-}
-
-
-/* =========================================
-   タブレット・小さめ画面
-========================================= */
-
-@media (max-width: 850px) {
-
-    .mainLayout {
-        grid-template-columns: 1fr;
-    }
-
-
-    .quickLinks {
-        position: static;
-    }
-
-
-    .quickLinkList {
-        max-height: none;
-
-        display: grid;
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-}
-
-
-/* =========================================
-   スマートフォン
-========================================= */
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-
-    .page {
-        max-width: 100%;
-    }
-
-
-    .topHeader {
-        flex-wrap: wrap;
-
-        gap: 10px;
-
-        padding: 16px;
-    }
-
-
-    .crewArea {
-        width: auto;
-    }
-
-
-    .titleArea {
-        width: 100%;
-
-        order: 3;
-
-        padding-left: 0;
-    }
-
-
-    .titleArea h1 {
-        font-size: 19px;
-    }
-
-
-    .version {
-        margin-left: auto;
-    }
-
-
-    .cardGrid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .quickLinkList {
-        grid-template-columns: 1fr;
-    }
 
 }
