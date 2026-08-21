@@ -578,3 +578,29 @@ body {
   height: 26px;
   object-fit: contain;
 }
+/* =========================
+   管理メニュー：3列×2段
+========================= */
+
+.mainColumn .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.mainColumn .manageCard {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 18px 10px;
+}
+
+.mainColumn .manageCard .cardTitle {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.mainColumn .manageCard .cardSub {
+    font-size: 12px;
+    white-space: nowrap;
+}
